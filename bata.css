@@ -1,0 +1,83 @@
+
+.nav_area{
+    position: relative;
+}
+.nav_link::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    left: 0;
+    bottom: -5px;
+    z-index: 1;
+    transition: width 0.5s;
+}
+.nav_link:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+/* drop down css here */
+ul li> .dropdown{
+    display: none;
+    position: absolute;
+}
+ul li:hover > .dropdown{
+    display: block;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+ul li:hover> .dropdown li{
+    padding: 5px;
+}
+.icon-1{
+display: none;
+}
+.heart{
+    opacity: 0;
+}
+.product_cart:hover .heart{
+    opacity: 1;
+}
+.product_cart .shop_now_btn , .circle , .heart , .shoes_size{
+    opacity: 0;
+}
+.product_cart:hover .shop_now_btn , .product_cart:hover .circle , .product_cart:hover .heart , .product_cart:hover .shoes_size{
+    opacity: 1;
+}
+.zoomImg:hover{
+transform: scale(1.1);
+
+}
+.animate-scale img{
+    transition: transform 0.8s ease,
+    filter 0.8s ease;
+}
+.animate-scale img:hover{
+    transform: scale(1.1);
+    filter:brightness(0.7)
+}
+/* review css start */
+.carousel-inner{
+    transition: transform 0.5s ease-in-out;
+}
+.review-carousel{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.review-btn{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+.prevSlide{
+    left: 10px;
+}
+.nextSlide{
+    right: 10px;
+}

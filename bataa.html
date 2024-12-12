@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprisingly Bata-batabd</title>
+    <link rel="icon" href="images/bata_logo.png">
+    <!-- taileind css link here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#eb785f',
+                color: '#969696' ,
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="bata.css">
+</head>
+<!-- javascript link here -->
+ 
+<body class="p-0 m-0">
+    <header>
+        <nav class="flex justify-between items-center gap-10 mt-6 h-20 px-2 text-2xl bg-gray-50">
+           
+            <div class="flex gap-5">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>FIND A STORE | CUSTOMER CARE:19379839989</h4>
+            </div>
+            <div>
+                <img src="images/bata_logo.png" alt="">
+            </div>
+            <div class="flex gap-4">
+                <div class="flex gap-4 text-2xl">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-regular fa-heart px-2"></i>
+                    <i class="fa-brands fa-whatsapp bg-green-500 px-2 py-2 rounded text-white"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-2xl hover:bg-white">
+                    <input type="text" placeholder="search" >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+        <nav class="flex gap-4 items-center  text-xl font-medium px-0 m-6">
+            <ul class="flex gap-10 px-20">
+            <li class="nav_area"> <a class="py-10 nav_link text-red-500" href="">SUPER SELL</a></li>
+            <li class="nav_area"> <a class="py-10 nav_link">SNEAKER STUDIO</a></li>
+            <li class="nav_area">
+                <a class="py-10 nav_link">BRANDS</a>
+                <ul class="dropdown font-normal mt-10">
+                    <li><a href=""><span>></span><span>Power</span></a></li>
+                    <li><a href=""><span>></span><span>North Star</span></a></li>
+                    <li><a href=""><span>></span><span>Adidas</span></a></li>
+                    <li><a href=""><span>></span><span>Bata</span></a></li>
+                    <li><a href=""><span>></span><span>Comfit</span></a></li>
+                    <li><a href=""><span>></span><span>School</span></a></li>
+                    <li><a href=""><span>></span><span>Weinbanner</span></a></li>
+                    <li><a href=""><span>></span><span>Bata</span></a></li>
+                    <li><a href=""><span>></span><span>Power</span></a></li>
+                </ul>
+            </li>
+            <li class="nav_area"><a class="py-10 nav_link">MEN</a></li>
+            <li class="nav_area"><a class="py-10 nav_link">WOMEN</a></li>
+            <li class="nav_area"><a class="py-10 nav_link">CHILDREN</a></li>
+            <li class="nav_area"><a class="py-10 nav_link">ACCESORIES</a></li>
+            <li class="nav_area">
+                <a href="" class="py-10 nav_link">BATA CLUB</a>
+            <ul class="dropdown font-normal mt-10 text-xl">
+                <li><a href="">Check Your bata club</a></li>
+                <li><a href="">Join Bata club</a></li>
+                <li><a href="">Bata club Benefits</a></li>
+                <li><a href="">Register Yourself</a></li>
+            </ul>
+            </li>
+            <li class="nav_area"><a href="" class="py-10 nav_link">B-MAG</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="max-width-[1900px] mx-auto">
+        <!-- <section class="ml-6 mr-6 mt-10">
+            <img class="w-full item1" src="images/web-banner.jpg" alt="">
+            <img class="w-full item2" src="images/web-banner2.jpg" alt="">
+            <img class="w-full item3" src="images/web-banner3.jpg" alt="">
+            <img class="w-full item4" src="images/web-banner4.jpg" alt="">
+        </section> -->
+        <div class="carousel w-full">
+            <div id="item1" class="carousel-item w-full">
+              <a href=""><img
+                src="images/web-banner.jpg"
+                class="w-full" /></a>
+            </div>
+            <div id="item2" class="carousel-item w-full">
+              <a href=""><img
+                src="images/web-banner2.jpg"
+                class="w-full" /></a>
+            </div>
+            <div id="item3" class="carousel-item w-full">
+              <a href=""><img
+                src="images/web-banner3.jpg"
+                class="w-full" /></a>
+            </div>
+            <div id="item4" class="carousel-item w-full">
+              <a href=""><img
+                src="images/web-banner4.jpg"
+                class="w-full" /></a>
+            </div>
+          </div>
+          <div class="flex w-full justify-center gap-2 py-2">
+            <a href="#item1" class="btn btn-xs border-solid bg-red-700 h-6 w-6 rounded-full"></a>
+            <a href="#item2" class="btn btn-xs rounded-full h-6 w-6 border-solid bg-red-700"></a>
+            <a href="#item3" class="btn btn-xs rounded-full h-6 w-6 border-solid  bg-red-700"></a>
+            <a href="#item4" class="btn btn-xs rounded-full h-6 w-6 border-solid bg-red-700"></a>
+          </div>
+          <!-- ..... -->
+        <section class="grid grid-cols-4 ml-6 mr-5 mt-10 mb-10 gap-10">
+            <a href=""><img class="w-full zoomImg" src="images/crop_center.jpg" alt=""></a>
+            <a href=""><img class="w-full zoomImg" src="images/crop_center2.jpg" alt=""></a>
+            <a href=""><img class="w-full zoomImg" src="images/crop_center3.jpg" alt=""></a>
+            <a href=""><img class="w-full zoomImg" src="images/accessories_1.jpg" alt=""></a>
+        </section>
+        <section class="mr-5 ml-5">
+            <a href=""><img class="w-full" src="images/web-banner_20.jpg" alt=""></a>
+        </section>
+        <section class="ml-6 mr-6 font-semibold">
+            <h1 class="text-3xl pt-10">JUST LANDED</h1>
+        </section>
+        <section>
+            <nav>
+                <ul class="flex ml-6 mr-6 py-10 gap-10 justify-center text-xl">
+                    <li class="border-solid border-2 rounded-2xl px-7 mb-5">CASUALS</li>
+                        <li>LADIES WEAR</li>
+                        <li>FOOT WEAR</li>
+                        <li>SNEAKERS</li>
+                        <li>FORMALS</li>
+                        <li>ACCECORIES</li>
+                </ul>
+            </nav>
+        </section>
+        <!-- cart section start -->
+        <section class="grid grid-cols-4 gap-10 mr-6 ml-6">
+            <!-- cart 1 -->
+            <div class="product_cart w-70 h-[460px] bg-white hover:shadow-2xl p-10 rounded-2xl mt-10 zoomCart cursor-pointer relative">
+                <div class="flex justify-center product_img" >
+                    <img class="img_1 zoomImg cursor-pointer w-32 shoes ml-2" src="images/shoes.jpg" alt="">
+                    <img class="img_2 zoomImg cursor-pointer w-32 rotate_shoes ml-5" src="images/rotate_shoes.jpg" alt="">
+                </div>
+                <div>
+                    <p>
+                        <i class="heart text-2xl text-gray-500 absolute top-6 right-6 fa-regular fa-heart"></i>
+                    </p>
+                    <h6 class="shoes_size flex justify-center gap-5">
+                    <p class="nav_area">
+                        <span class="nav_link px-4">10</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">9</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">8</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">7</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">+1</span>
+                    </p>
+                    </h6>
+                    <h4 class="text-2xl text-center">Weinbrenner</h4>
+                    <p class="text-xl text-center">Weinbrenner BERLIN Men's Outdoor Belt Sandal </p>
+                    <div class="flex justify-center gap-3">
+                        <p class="text-xl font-bold line-through">$1000</p>
+                        <p class="text-xl font-bold text-red-500">$900</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="shop_now_btn w-full text-white bg-black text-xl font-bold rounded mt-6 py-2 hover:bg-red-700 text-white">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <div class="circle  w-6 h-6 rounded-full bg-gray-400">
+
+                    </div>
+                </div>
+            </div>
+            <!-- cart 2 -->
+            <div class="product_cart w-70 h-[460px] bg-white hover:shadow-2xl p-10 rounded-2xl mt-10 zoomCart cursor-pointer relative">
+                <div class="flex justify-center product_img" >
+                    <img class="img_1 zoomImg cursor-pointer w-32 shoes ml-2" src="images/shoes2.jpg" alt="">
+                    <img class="img_2 zoomImg cursor-pointer w-32 rotate_shoes ml-7" src="images/rotate2.jpg" alt="">
+                </div>
+                <div>
+                    <p>
+                        <i class="heart text-2xl text-gray-500 absolute top-6 right-6 fa-regular fa-heart"></i>
+                    </p>
+                    <h6 class="shoes_size flex justify-center gap-5">
+                    <p class="nav_area">
+                        <span class="nav_link px-4">10</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">9</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">8</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">7</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">+1</span>
+                    </p>
+                    </h6>
+                    <h4 class="text-2xl text-center">Weinbrenner</h4>
+                    <p class="text-xl text-center">Weinbrenner BERLIN Men's Outdoor Belt Sandal </p>
+                    <div class="flex justify-center gap-3">
+                        <p class="text-xl font-bold line-through">$1500</p>
+                        <p class="text-xl font-bold text-red-500">$1200</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="shop_now_btn w-full text-white bg-black text-xl font-bold rounded mt-6 py-2 hover:bg-red-700 text-white">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <div class="circle  w-6 h-6 rounded-full bg-blue-400">
+                    </div>
+                </div>
+            </div>
+            <!-- cart-3 -->
+            <div class="product_cart w-70 h-[460px] bg-white hover:shadow-2xl p-10 rounded-2xl mt-10 zoomCart cursor-pointer relative">
+                <div class="flex justify-center product_img" >
+                    <img class="img_1 zoomImg cursor-pointer w-32 shoes ml-2" src="images/shoess.webp" alt="">
+                    <img class="img_2 zoomImg cursor-pointer w-32 rotate_shoes ml-7" src="images/rotate_shoess.jpg" alt="">
+                </div>
+                <div>
+                    <p>
+                        <i class="heart text-2xl text-gray-500 absolute top-6 right-6 fa-regular fa-heart"></i>
+                    </p>
+                    <h6 class="shoes_size flex justify-center gap-5">
+                    <p class="nav_area">
+                        <span class="nav_link px-4">10</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">9</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">8</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">7</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">+1</span>
+                    </p>
+                    </h6>
+                    <h4 class="text-2xl text-center">Weinbrenner</h4>
+                    <p class="text-xl text-center">Weinbrenner BERLIN Men's Outdoor Belt Sandal </p>
+                    <div class="flex justify-center gap-3">
+                        <p class="text-xl font-bold line-through">$1500</p>
+                        <p class="text-xl font-bold text-red-500">$1200</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="shop_now_btn w-full text-white bg-black text-xl font-bold rounded mt-6 py-2 hover:bg-red-700 text-white">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <div class="circle  w-6 h-6 rounded-full bg-blue-400">
+                    </div>
+                </div>
+            </div>
+            <!-- cart 4 -->
+            <div class="product_cart w-70 h-[460px] bg-white hover:shadow-2xl p-10 rounded-2xl mt-10 zoomCart cursor-pointer relative">
+                <div class="flex justify-center product_img" >
+                    <img class="img_1 zoomImg cursor-pointer w-32 shoes ml-2" src="images/shoes4.jpg" alt="">
+                    <img class="img_2 zoomImg cursor-pointer w-32 rotate_shoes ml-7" src="images/shoe3.jpg" alt="">
+                </div>
+                <div>
+                    <p>
+                        <i class="heart text-2xl text-gray-500 absolute top-6 right-6 fa-regular fa-heart"></i>
+                    </p>
+                    <h6 class="shoes_size flex justify-center gap-5">
+                    <p class="nav_area">
+                        <span class="nav_link px-4">10</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">9</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">8</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">7</span>
+                    </p>
+                    <p class="nav_area">
+                        <span class="nav_link px-4">+1</span>
+                    </p>
+                    </h6>
+                    <h4 class="text-2xl text-center">Weinbrenner</h4>
+                    <p class="text-xl text-center">Weinbrenner BERLIN Men's Outdoor Belt Sandal </p>
+                    <div class="flex justify-center gap-3">
+                        <p class="text-xl font-bold line-through">$1500</p>
+                        <p class="text-xl font-bold text-red-500">$1200</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="shop_now_btn w-full text-white bg-black text-xl font-bold rounded mt-6 py-2 hover:bg-red-700 text-white">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <div class="circle  w-6 h-6 rounded-full bg-blue-400">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cart end -->
+        <section class="ml-6 mr-6 font-semibold">
+            <h1 class="text-3xl pt-10">OUR HAND PICKED COLLECTION FOR YOU</h1>
+        </section>
+        <!-- zoom section start -->
+        <section class="grid grid-cols-2 gap-5 mt-10 mx-5">
+            <div class="">
+                <div  class="overflow-hidden animate-scale w-full relative">
+                    <a href=""><img class="w-200 h-200 zoomImg" src="images/crop_center1.jpg" alt=""></a>
+                </div>
+                <div class="absolute -mt-5 bg-white " >
+                 <h1 class="text-2xl p-10 ">NORTH STAR CURATED</h1>
+                 </div>
+                <div class="pt-26 px-5 text-center">
+                    <P class="font-semibold">Here goes the trendiest lifestyle sneakers to refidile you moves! Ensuring a look briming with coolness</P>
+                <div>
+                    <button class="text-2xl font-bold mt-5 pb-5">Shop Now</button>
+                </div>
+                </div>
+                
+            </div>  
+            <div>
+                <div class="w-full relative animate-scale overflow-hidden">
+                    <a href=""><img class="w-200 h-200" src="images/crop_cente5r.jpg" alt=""></a>
+                </div>
+                <h1>NORTH STAR CURATED</h1>
+                <P>Here goes the trendiest lifestyle sneakers to refidile you moves! Ensuring a look briming with coolness</P>
+                <a href="">Shop Now</a> 
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+        <!-- favourite section start -->
+         <section class="grid grid-cols-3 ml-3 mt-10">
+            <!-- cart 1 -->
+            <div class="bg-white  h-fit w-[400px]">
+                <div class="w-full relative overflow-hidden animate-scale">
+                    <a href=""><img src="images/favouriter.jpg" alt=""></a>
+                </div>
+                <div>
+                <div class="w-[300px] ml-[50px] absolute -mt-10">
+                    <div class="text-center bg-white">
+                    <h5 class="text-xl upper-case pt-4">LADIES</h5>
+                    <h6 class="text-3xl">CASUALS</h6>
+                    </div>
+                </div>
+            <div class="pt-16 px-5 text-center">
+                <p class=" font-semibold">Step into Batas chic colloction  of casual collection for ladies, blending everyday comfortable ,perfect for any occasion, ensuring confidence and effortless elegance</p>
+                <div>
+                    <button class="text-2xl font-bold mt-5 pb-5">Shop Now</button>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- cart 2 -->
+            <div class="bg-white  h-fit w-[400px]">
+                <div class="w-full animate-scale relative overflow-hidden">
+                    <a href=""><img src="images/favourite2.jpg" alt=""></a>
+                </div>
+                <div>
+                <div class="w-[300px] ml-[50px] absolute -mt-10">
+                    <div class="text-center bg-white">
+                    <h5 class="text-xl upper-case pt-4">MENS</h5>
+                    <h6 class="text-3xl">FORMAL</h6>
+                    </div>
+                </div>
+            <div class="pt-16 px-5 text-center">
+                <p class=" font-semibold">Step into Batas chic colloction  of casual collection for ladies, blending everyday comfortable ,perfect for any occasion, ensuring confidence and effortless elegance</p>
+                <div>
+                    <button class="text-2xl font-bold mt-5 pb-5">Shop Now</button>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- CART 3 -->
+            <div class="bg-white  h-fit w-[400px]">
+                <div class="w-full relative animate-scale overflow-hidden">
+                    <a href=""><img src="images/Favourite3.jpg" alt=""></a>
+                </div>
+                <div>
+                <div class="w-[300px] ml-[50px] absolute -mt-10">
+                    <div class="text-center bg-white">
+                    <h5 class="text-xl upper-case pt-4">LADIES</h5>
+                    <h6 class="text-3xl">BAGS</h6>
+                    </div>
+                </div>
+            <div class="pt-16 px-5 text-center">
+                <p class=" font-semibold">Step into Batas chic colloction  of casual collection for ladies, blending everyday comfortable ,perfect for any occasion, ensuring confidence and effortless elegance</p>
+                <div>
+                    <button class="text-2xl font-bold mt-5 pb-5">Shop Now</button>
+                </div>
+            </div>
+            </div>
+            </div>
+         </section>
+        <!-- instagram section start -->
+         <section>
+            <div class="ml-6 ">
+                <h1 class="text-3xl my-5 font-semibold">Bata On Instagram</h1>
+                <p class="text-red-500 my-5">#BATABANGLADESH</p>
+            </div>
+            <div class="grid grid-cols-5 gap-5 mx-10">
+                <a href=""><img src="images/carry_640x.jpg" alt=""></a>
+                <a href=""><img src="images/floatz_640x.jpg" alt=""></a>
+                <a href=""><img src="images/north_640x.jpg" alt=""></a>
+                <a href=""><img src="images/floatz_640x.jpg" alt=""></a>
+                <a href=""><img src="images/carry_640x.jpg" alt=""></a>
+            </div>
+         </section>
+         <!-- review section -->
+          <section class="md:bg-blue-50 z-0  mt-56">
+            <div class="w-[650px] mx-auto">
+                <div class="carousel relative overflow-hidden  my-44">
+                    <button class="preSlide px-4 py-2 text-white rounded-full bg-black shadow-2xl z-10" onclick="preSlide()"> &#10094;</button>
+                    <div class="carousel-inner flex">
+                        <!-- cart 1 -->
+                        <div class="carousel-item active relative">
+                            <div class="h-[470px]">
+                                <div class="bg-white shadow-2xl w-[600px] mx-auto p-16 rounded-xl">
+                                    <div class="flex justify-center text-6xl">
+                                        <i class="fa-solid  fa-quote-left"></i>
+                                    </div>
+                                    <p class="mt-5"> <span><a href="">Kacchi Bhai</a></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab illo iusto, ducimus, pariatur molestiae maiores obcaecati ratione nostrum, harum officia in temporibus aliquam distinctio dicta beatae. Nostrum amet commodi laboriosam.</p>
+                                </div> 
+                                <div class="w-10 h-16 bg-white absolute bottom-0 -rotate-45 ml-[280px] mb-[150px]">
+                                </div>
+                                <div class="flex justify-center">
+                                    <img class="w-10 h-10 rounded-full mt-8" src="images/bata_logo.png" alt="">
+                                </div>
+                                <h1 class="text-center text-black text-xl">Elon Mask</h1>
+                            </div>
+                        </div>
+                        <!-- cart 2 -->
+                        <div class="carousel-item">
+                            <div class="h-[350px]">
+                                <div class="bg-white shadow-2xl w-[600px] mx-auto absolute px-12 py-10 h-[300px] rounded-xl">
+                                    <div class="flex justify-center text-6xl">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <p class="mt-5"> <span><a href="">Kacchi Bhai</a></span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia sit veritatis perferendis amet sint fugiat accusamus placeat saepe distinctio deserunt. Voluptatum esse nisi iure et voluptate, debitis corporis iste facere!</p>
+                                </div>
+                                <div class="flex justify-center mt-10">
+                                    <img class="w-10 h-10 rounded-full " src="images/bata_logo.png" alt="">
+                                </div>
+                                    <h1 class="text-center text-black text-xl">Jeff Bezos</h1>
+                                <div class="w-10 h-16 bg-white absolute bottom-0 -rotate-45 ml-[280px] mb-[150px]">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- cart 3 -->
+                        <div class="carousel-item">
+                            <div class="bg-white shadow-2xl w-[600px] mx-auto px-12 py-10 h-[300px] absolute rounded-xl">
+                                <div class="flex justify-center text-6xl">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p class="mt-5"> <span><a href="">kacchi Bhai</a></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ut tempora quia esse, praesentium vitae perspiciatis ad mollitia earum dignissimos ab vero eum nesciunt molestias officia. Suscipit est voluptate nulla.</p>
+                                <div class="flex justify-center mt-20">
+                                    <img class="h-10 w-10 rounded-full" src="images/bata_logo.png" alt="">
+                                </div>
+                                <h1 class="text-center text-black text-xl">Bill Gates</h1>
+                            </div>
+                            <div class="w-10 h-16 bg-white absolute bottom-0 -rotate-45 ml-[280px] mb-[150px]">
+                            </div>
+                        </div>
+                        <!-- cart 4 -->
+                         <div class="carousel-item">
+                            <div class="bg-white shadow-2xl w-[600px] mx-auto px-12 py-10 h-[300px] absolute rounded-xl">
+                                <div class="flex justify-center text-6xl">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p class="mt-5"> <span><a href="">Kacchi Bhai</a></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi atque aliquam quaerat error voluptatum, vero a temporibus assumenda possimus deserunt aut, cum vel! Laboriosam, reprehenderit? Veniam illum iste possimus?</p>
+                                <div class="flex justify-center mt-28">
+                                    <img class="h-10 w-10 rounded-full" src="images/bata_logo.png" alt="">
+                                </div>
+                                <h1 class="text-center text-black text-xl">Mark Zuckerbark</h1>
+                            </div>
+                            <div class="w-10 h-16 bg-white absolute bottom-0 -rotate-45 ml-[280px] mb-[150px]">
+                            </div>
+                            </div>
+                         </div>
+                         <button class="nextSlide px-4 py-2 text-white rounded-full bg-black z-10" onclick="nextSlide()"> &#10095;</button>
+                    </div>
+                </div>
+          </section>
+    </main>
+    <!-- footer section start -->
+    <footer class="bg-black mt-10 h-900 py-10">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white mb-10">
+        <div class="mt-5 mx-2">
+            <h1 class="text-xl font-bold mb-3 ">About</h1>
+            <ul class="">
+                <li><a href="">About us</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Award & Recognation</a></li>
+                <li><a href="">Bata Fanbase</a></li>
+                <li><a href="">Share Department</a></li>
+            </ul>
+        </div>
+        <div class="mt-5 mx-2">
+            <h1 class="text-xl font-bold mb-3">Information</h1>
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Award & Recognation</a></li>
+                <li><a href="">Bata Fanbase</a></li>
+                <li><a href="">Share Department</a></li>
+            </ul>
+        </div>
+        <div class="mt-5 mx-2">
+            <h1 class="text-xl font-bold mb-3">Popular</h1>
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Award & Recognation</a></li>
+                <li><a href="">Bata Fanbase</a></li>
+                <li><a href="">Share Department</a></li>
+                <li><a href="">Power </a></li>
+            </ul>
+        </div>
+        <div class="mt-5 mx-2">
+            <h1 class="text-xl font-bold mb-3" >Customer Service</h1>
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Award & Recognation</a></li>
+                <li><a href="">Bata Fanbase</a></li>
+                <li><a href="">Share Department</a></li>
+            </ul>
+        </div>
+        <div class="mt-5 mx-2">
+            <h1 class="text-xl font-bold mb-3">INFO</h1>
+            <p>Bata shoes company Bangladesh limited. </p>
+            <p>Tongi Gazipur, Bangladesh.</p>
+            <p>Call us: 89087593848(9am-9pm)</p>
+            <p>email: bd.customercare@bata.com</p>
+        </div>
+        </div>
+        <div class="border border-color">
+            
+        </div>
+        <div class="flex justify-between my-6 mx-3 ">
+            <a class="text-white" href="">Sign Up For our new Sleter</a>
+            <div class="text-white flex gap-5 text-xl">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i> </a>
+            </div>
+        </div>
+        <p class="text-center text-color">
+           copyright &copy; 2024 Bata Shoe company Bangladesh Ltd.Tongi, portal code-1710, Gazipur, Bangladesh
+        </p>
+        <div>
+            <ul class="flex gap-3 justify-center my-5 text-center cursor-pointer">
+                <li><img class="h-6 w-6" src="images/visa.png" alt=""></li>
+                <li><img class="h-6 w-6" src="images/masterc-sq_x300.png" alt=""></li>
+                <li><img class="h-6 w-6" src="images/amex-sq_x300.png" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
